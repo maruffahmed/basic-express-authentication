@@ -1,0 +1,25 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+main{
+  min-height: 100vh!important;
+}
+.profile-thumbnail img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width : 720px){
+  .card{
+    width:50%!important;
+  }
+}

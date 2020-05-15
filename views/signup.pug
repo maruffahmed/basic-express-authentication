@@ -1,0 +1,26 @@
+extends layout
+
+block menu_singup
+    a.nav-link.active(href="/signup") Sign Up
+block content
+    main.d-flex.flex-column.align-items-center.pt-5
+        div.container
+            
+            div.card.m-auto
+                div.card-body
+                    h5.card-title Sign up
+                    
+                    form(action="/signup" method="POST")
+                        div.form-group
+                            label(for="name-input") Full name
+                            input#name-input.form-control(type="text" name="name")
+                        div.form-group
+                            label(for="email-input") Email
+                            input#email-input.form-control(type="email" name="email")
+                        div.form-group
+                            label(for="pass-input") Password
+                            input#pass-input.form-control(type="password" name="pass")
+                        div.form-group
+                            label(for="confirm-pass-input") Confirm password
+                            input#confirm-pass-input.form-control(type="password" name="confirm_pass")
+                        button(type="submit").btn.btn-block.btn-outline-dark Sign up

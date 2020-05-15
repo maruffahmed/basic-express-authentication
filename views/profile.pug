@@ -1,0 +1,17 @@
+extends layout
+
+block menu_profile
+    a.nav-link.active(href="/profile") Profile
+block content
+    main.d-flex.flex-column.align-items-center.pt-5
+        div.container
+            
+            div.card.m-auto
+                div.card-body
+                    .profile-thumbnail.d-flex.justify-content-center.align-items-center.p-3
+                        img(src='/images/profile.jpg' alt='profile_thumbnail')
+                    h5.card-title.text-center #{name}
+                    p.text-center #{email}
+                    h1.text-center Hi
+                    
+                    

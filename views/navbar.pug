@@ -1,0 +1,34 @@
+
+nav.navbar.navbar-expand-md.bg-dark.navbar-dark
+            .container
+                <!-- Brand -->
+                a.navbar-brand(href="#") Navbar
+
+                <!-- Toggler/collapsibe Button -->
+                button.navbar-toggler(type="button" data-toggle="collapse" data-target="#collapsibleNavbar")
+                    span.navbar-toggler-icon
+                <!-- Navbar links -->
+                div.collapse.navbar-collapse#collapsibleNavbar
+                    ul.navbar-nav.ml-auto
+                        li.nav-item
+                            block menu_home
+                                a.nav-link(href="/") Home
+                        li.nav-item
+                            block menu_about
+                                a.nav-link(href="/about") About
+                        li.nav-item
+                            block menu_contact
+                                a.nav-link(href="/contact") Contact
+                        if !currentUser
+                            li.nav-item
+                                block menu_singup
+                                    a.nav-link(href="/signup") Sign Up
+                            li.nav-item
+                                block menu_login
+                                    a.nav-link(href="/login") Login
+                        if currentUser
+                            li.nav-item
+                                    block menu_profile
+                                        a.nav-link(href="/profile") Profile
+                            li.nav-item
+                                    a.nav-link(href="/logout") Log out
