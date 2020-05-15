@@ -13,10 +13,17 @@ You need node js installed to your local machine.
 
 ### Installing
 
-I used a npm package that required python. Make sure you have install python on your local machine. 
+I used a npm package that required python. Make sure you have installed python on your local machine. 
 Run this command for install all the packages i used:
+
 ```
 npm install
+```
+
+To run the server, use:
+
+```
+npm start
 ```
 
 ## Built With
