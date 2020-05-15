@@ -30,6 +30,7 @@ npm start
 
 * [Express Js](https://expressjs.com/) - The web framework used
 * [Npm](https://www.npmjs.com/) - Dependency Management
+* [MongoBD](https://www.mongodb.com/) - Database
 
 ## Authors
 
