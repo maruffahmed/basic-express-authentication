@@ -1,6 +1,6 @@
-# Project Title
+# Basic express user authentication system
 
-Basic express user authentication system
+This is a basic session based user authentication system by using express and mongoDB
 
 ## Getting Started
 
