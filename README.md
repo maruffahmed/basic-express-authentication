@@ -13,7 +13,19 @@ You need node js installed to your local machine.
 
 ### Installing
 
-I used a npm package that required python. Make sure you have installed python on your local machine.<br/>
+I used a npm package name `bcrypt` that required python. Make sure you have installed python on your local machine.<br/>
+
+For setup python on your npm dependency management run this command:
+```
+npm config set python [python.exe file address of your local machine]
+```
+
+#### Example command
+
+```
+npm config set  python "C:\Users\User\AppData\Local\Programs\Python\Python36-32\python.exe"
+```
+
 Make sure you have installed MongoDB on your local machine. <br>
 
 [MongoBD](https://www.mongodb.com/) - MongoDB website
