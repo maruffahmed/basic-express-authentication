@@ -25,6 +25,7 @@ router.post('/', function(req, res, next) {
         var userData = {
             email : req.body.email,
             name : req.body.name,
+            username: req.body.name.replace(" ","_").toLowerCase(),
             password : req.body.pass
         };
 
@@ -34,7 +35,8 @@ router.post('/', function(req, res, next) {
                 return next(err);
             }
             req.session.userId = user._id;
-            res.redirect('/profile');
+            req.session.username = user.username;
+            res.redirect('/profile/'+user.username);
         })
     }else{
         next(createError(400));

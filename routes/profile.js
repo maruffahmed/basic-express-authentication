@@ -9,7 +9,7 @@ router.get('/',mid.requiredLogin, function(req, res, next) {
     if(error){
       return next(error);
     }else{
-      res.render('profile',{title:'Profile',name:user.name,email:user.email})
+      res.render('profile',{name:user.name,email:user.email,username:user.username})
     }
   })
 });

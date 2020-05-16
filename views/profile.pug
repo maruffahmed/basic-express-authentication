@@ -1,15 +1,18 @@
 extends layout
 
+block title
+    title=name
 block menu_profile
-    a.nav-link.active(href="/profile") Profile
+    a.nav-link.active(href="/profile/"+username) Profile
 block content
     main.d-flex.flex-column.align-items-center.pt-5
         div.container
             
             div.card.m-auto
-                div.card-body
+                div.card-body.text-center
                     .profile-thumbnail.d-flex.justify-content-center.align-items-center.p-3
                         img(src='/images/profile.jpg' alt='profile_thumbnail')
+                    p.badge.badge-primary #{username}
                     h5.card-title.text-center #{name}
                     p.text-center #{email}
                     h1.text-center Hi

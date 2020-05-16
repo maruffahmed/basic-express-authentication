@@ -31,6 +31,7 @@ app.use(session({
 // make user ID available in templates
 app.use(function(req,res,next){
   res.locals.currentUser = req.session.userId;
+  res.locals.username = req.session.username;
   next();
 })
 
@@ -62,7 +63,7 @@ app.use('/about', aboutRouter);
 app.use('/contact', contactRouter);
 app.use('/signup', signupRouter);
 app.use('/login', loginRouter);
-app.use('/profile', profileRouter);
+app.use('/profile/:name', profileRouter);
 app.use('/logout', logoutRouter);
 
 // catch 404 and forward to error handler

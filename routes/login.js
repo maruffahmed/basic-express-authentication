@@ -21,7 +21,8 @@ router.post('/', function(req, res, next) {
                 return next(createError(401,'Wrong email or password!!'));
             }else{
                 req.session.userId = user._id;
-                return res.redirect('/profile');
+                req.session.username = user.username;
+                return res.redirect('/profile/'+user.username);
             }
         });
     }else{

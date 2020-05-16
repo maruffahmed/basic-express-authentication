@@ -3,8 +3,8 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport" content="width=device-width, initial-scale=1.0")
-        
-        title=title
+        block title
+            title=title
 
         link(rel="stylesheet" href="/stylesheets/bootstrap.min.css")
         link(rel="stylesheet" href="/stylesheets/style.css")
@@ -15,6 +15,6 @@ html(lang="en")
             include navbar
 
             block content
-        script(src="javascripts/vendor/jquery-3.3.1.min.js")
-        script(src="javascripts/vendor/bootstrap.min.js")
-        script(src="javascripts/main.js")
+        script(src="/javascripts/vendor/jquery-3.3.1.min.js")
+        script(src="/javascripts/vendor/bootstrap.min.js")
+        script(src="/javascripts/main.js")
