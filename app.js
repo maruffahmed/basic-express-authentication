@@ -11,7 +11,7 @@ var app = express();
 
 
 //mongoose connection
-mongoose.connect('mongodb://localhost:27017/userauth')
+mongoose.connect(process.env.MONGOLAB_URI = 'mongodb+srv://maruf76:<maruf761122>@cluster0-752ei.mongodb.net/userauth?retryWrites=true&w=majority' || 'mongodb://127.0.0.1:27017/userauth');
 var db = mongoose.connection;
 
 // mongo error
