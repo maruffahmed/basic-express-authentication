@@ -14,6 +14,10 @@ You need node js installed to your local machine.
 ### Installing
 
 I used a npm package that required python. Make sure you have installed python on your local machine.<br/>
+Make sure you have installed MongoDB on your local machine. <br>
+
+[MongoBD](https://www.mongodb.com/) - MongoDB website
+
 Run this command for install all the packages i used:
 
 ```
