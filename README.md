@@ -30,7 +30,7 @@ Make sure you have installed MongoDB on your local machine. <br>
 
 [MongoBD](https://www.mongodb.com/) - MongoDB website
 
-To connect MongoDB with the app, user your MongoDB connection string into here :
+To connect MongoDB with the app, use your MongoDB connection string into `app.js` :
 ![Example](/img/MongoDb_connection_string.png)
 
 Run this command for install all the packages i used:
